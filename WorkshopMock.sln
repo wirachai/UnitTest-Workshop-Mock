@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkshopMock", "WorkshopMock\WorkshopMock.csproj", "{721411F3-A774-4EB2-88F9-C25FBB238FBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkshopMock.Test", "WorkshopMock.Test\WorkshopMock.Test.csproj", "{7D7C14E0-861D-4FB2-A5CD-D9D5F27D078F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{721411F3-A774-4EB2-88F9-C25FBB238FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{721411F3-A774-4EB2-88F9-C25FBB238FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{721411F3-A774-4EB2-88F9-C25FBB238FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D7C14E0-861D-4FB2-A5CD-D9D5F27D078F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D7C14E0-861D-4FB2-A5CD-D9D5F27D078F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D7C14E0-861D-4FB2-A5CD-D9D5F27D078F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D7C14E0-861D-4FB2-A5CD-D9D5F27D078F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
