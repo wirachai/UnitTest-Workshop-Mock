@@ -11,9 +11,7 @@ namespace WorkshopMock.Test
         public void Withdraw_ShouldSave_WhenWithdrawEqualBalance()
         {
             // arrange
-            var mockRepo = new AccountRepository_Mock();
-            mockRepo.Balance = 100;
-
+            var mockRepo = CreateMockWithBalance(100);
             var service = new BankAccountService(mockRepo);
 
             // act
@@ -27,9 +25,7 @@ namespace WorkshopMock.Test
         public void Withdraw_ShouldSave_WhenWithdrawLessThanBalance()
         {
             // arrange
-            var mockRepo = new AccountRepository_Mock();
-            mockRepo.Balance = 500;
-
+            var mockRepo = CreateMockWithBalance(500);
             var service = new BankAccountService(mockRepo);
 
             // act
@@ -43,9 +39,7 @@ namespace WorkshopMock.Test
         public void Withdraw_ShouldNotSave_WhenWithdrawGreaterThanBalance()
         {
             // arrange
-            var mockRepo = new AccountRepository_Mock();
-            mockRepo.Balance = 500;
-
+            var mockRepo = CreateMockWithBalance(500);
             var service = new BankAccountService(mockRepo);
 
             // act
@@ -53,6 +47,13 @@ namespace WorkshopMock.Test
 
             // assert
             Assert.AreEqual(false, mockRepo.IsSaved);
+        }
+
+        private AccountRepository_Mock CreateMockWithBalance(decimal balance)
+        {
+            var mockRepo = new AccountRepository_Mock();
+            mockRepo.Balance = balance;
+            return mockRepo;
         }
     }
 }
